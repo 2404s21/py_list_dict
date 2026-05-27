@@ -1,0 +1,76 @@
+/* RISE slideshow font sizing for JupyterLab */
+/*
+   Quick tuning (change ONLY these values):
+   - Normal full-screen projector: --slide-scale: 1.00
+   - Slightly larger:            --slide-scale: 1.08
+   - Large room:                 --slide-scale: 1.15
+*/
+
+:root {
+  --slide-scale: 1.00;
+  --body-size: 1.00em;
+  --code-size: 0.98em;
+  --body-line: 1.30;
+  --code-line: 1.28;
+  --code-panel-max-h: 34vh;
+  --output-panel-max-h: 30vh;
+}
+
+/* Base slide scaling */
+.reveal .slides section {
+  font-size: calc(1em * var(--slide-scale)) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Markdown-rendered text */
+.reveal .jp-RenderedHTMLCommon,
+.reveal .jp-RenderedHTMLCommon p,
+.reveal .jp-RenderedHTMLCommon li,
+.reveal .jp-RenderedText,
+.reveal .jp-MarkdownCell {
+  font-size: var(--body-size) !important;
+  line-height: var(--body-line) !important;
+}
+
+/* Headings */
+.reveal h1 { font-size: calc(2.00em * var(--slide-scale)) !important; }
+.reveal h2 { font-size: calc(1.55em * var(--slide-scale)) !important; }
+.reveal h3 { font-size: calc(1.25em * var(--slide-scale)) !important; }
+
+/* Code editor input (CodeMirror) */
+.reveal .cm-editor,
+.reveal .cm-content,
+.reveal .cm-line {
+  font-size: calc(var(--code-size) * var(--slide-scale)) !important;
+  line-height: var(--code-line) !important;
+}
+
+/* Code output text */
+.reveal .jp-OutputArea pre,
+.reveal .jp-RenderedText pre,
+.reveal pre code {
+  font-size: calc(var(--code-size) * var(--slide-scale)) !important;
+  line-height: var(--code-line) !important;
+}
+
+/* Cell spacing */
+.reveal .jp-Cell {
+  margin-bottom: 0.45em !important;
+}
+
+/* Keep code input and outputs inside viewport and scroll internally */
+.reveal .jp-CodeCell .jp-InputArea,
+.reveal .jp-CodeCell .jp-InputArea-editor,
+.reveal .jp-CodeCell .cm-scroller {
+  max-height: var(--code-panel-max-h) !important;
+  overflow: auto !important;
+}
+
+.reveal .jp-CodeCell .jp-OutputArea,
+.reveal .jp-CodeCell .jp-OutputArea-child,
+.reveal .jp-CodeCell .jp-OutputArea-output,
+.reveal .jp-CodeCell .jp-OutputArea-output pre {
+  max-height: var(--output-panel-max-h) !important;
+  overflow: auto !important;
+}
