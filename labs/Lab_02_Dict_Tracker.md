@@ -90,7 +90,6 @@ Write 2-3 sentences:
 ## Want to learn more?
 - Lists
 	- Beginner: https://www.w3schools.com/python/python_lists.asp
-	- Why indexing starts at 0: https://stackoverflow.com/questions/18283097/why-are-array-indexes-zero-based-in-most-programming-languages
 	- More: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 - Dictionaries
 	- Beginner: https://www.w3schools.com/python/python_dictionaries.asp
