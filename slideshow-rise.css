@@ -7,12 +7,12 @@
 */
 
 :root {
-  --slide-scale: 1.10;
-  --body-size: 1.05em;
-  --code-size: 1.02em;
-  --body-line: 1.30;
-  --code-line: 1.28;
-  --code-panel-max-h: 34vh;
+  --slide-scale: 1.02;
+  --body-size: 1.01em;
+  --code-size: 1.01em;
+  --body-line: 1.02;
+  --code-line: 1.02;
+  --code-panel-max-h: 70vh;
   --output-panel-max-h: 30vh;
 }
 
