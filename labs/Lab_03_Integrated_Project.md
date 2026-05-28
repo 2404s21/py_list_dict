@@ -1,37 +1,101 @@
-# Lab 03: Integrated Mini Project (CS 119)
+# Lab 03: Integrated Project (Beginner Version) (CS 119)
 
-## Theme
-Build a tiny event app model for campus game night.
+## Project theme
+Build a small LACC CS learning-path helper.
 
-## Requirements
-Use all four:
+## What you must use
 - list
-- dict
-- tuple
-- object (class or dataclass)
+- dictionary
+- tuple (brief)
+- object (brief)
 
-## Starter idea
-- `sessions` as a tuple of time slots.
-- `queue` as a list of arriving students.
-- `checkins` as a dictionary of student to visit count.
-- `Event` object for event metadata.
+## Step 1: Create a list
+Make a list of this week's tasks:
 
-## Tasks
-1. Define an `Event` class/dataclass with fields: `name`, `room`, `host`.
-2. Create `sessions` tuple with 3 time slots.
-3. Create `queue` list with repeated names.
-4. Build `checkins` dict from `queue`.
-5. Print students who checked in more than once.
-6. Print a summary line for the event.
+```python
+tasks = ['review Python', 'go to office hours', 'ask 5 academic questions']
+```
 
-## Extension (fun)
-Give each student a random "energy level" from 1 to 5 and print a hype leaderboard.
+Task:
+1. Print each task with a number using a loop.
 
-## Reflection
-In 4-6 lines, explain why each structure was chosen.
+## Step 2: Create a dictionary
+Create a points dictionary for the same tasks:
 
-## Grading rubric (10 points)
-- Correct use of each structure: 4
-- Correct logic/output: 3
-- Code style/readability: 2
-- Reflection quality: 1
+```python
+points = {
+	'review Python': 0.2,
+	'go to office hours': 0.5,
+	'ask 5 academic questions': 0.3
+}
+```
+
+Tasks:
+1. Compute total points.
+2. Print each task with its points.
+
+## Step 3: Very brief tuple use
+Create one tuple for a fixed office hour slot:
+
+```python
+office_hour_slot = ('Wednesday', '2:00 PM')
+```
+
+Task:
+1. Print the tuple.
+
+## Step 4: Very brief object use
+Use a dataclass to model one student:
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class StudentCard:
+	name: str
+	major: str
+```
+
+Tasks:
+1. Create one object.
+2. Print the object.
+
+## Full starter template
+```python
+from dataclasses import dataclass
+
+# Step 1: list
+tasks = ['review Python', 'go to office hours', 'ask 5 academic questions']
+
+# Step 2: dictionary
+points = {
+	'review Python': 0.2,
+	'go to office hours': 0.5,
+	'ask 5 academic questions': 0.3
+}
+
+# Step 3: tuple (fixed info)
+office_hour_slot = ('Wednesday', '2:00 PM')
+
+# Step 4: object
+@dataclass
+class StudentCard:
+	name: str
+	major: str
+
+student = StudentCard('Alex', 'CS')
+
+# Your prints and loop logic below
+```
+
+## Reflection (short)
+Write 3-4 lines:
+1. Why did you use a list for tasks?
+2. Why did you use a dictionary for points?
+3. Why is tuple/object only brief here?
+
+## Simple rubric (10 points)
+- Correct code execution: 4
+- Correct use of list + dict: 3
+- Brief tuple + object usage: 2
+- Reflection: 1

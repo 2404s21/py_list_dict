@@ -1,35 +1,88 @@
-# Lab 02: Dictionary Tracker (CS 119)
+# Lab 02: Dictionary Basics For First-Time Python Students (CS 119)
 
-## Goals
-- Use dictionary creation, update, lookup, and iteration.
-- Use `.get()` for safe counting and defaults.
+## What you will practice
+- Create dictionaries.
+- Read and update values by key.
+- Use `.get()` for safer lookups.
+- Loop through key-value pairs.
 
-## Part A: Attendance counter
-Given:
+## Part A: Contribution points tracker
+Use this starter code:
+
 ```python
-checkins = ['ana', 'ben', 'ana', 'cory', 'ana', 'ben']
+points = {
+	'go to office hours': 0.5,
+	'ask 5 academic questions': 0.3,
+	'share one resource': 0.2
+}
 ```
-Tasks:
-1. Build a dictionary `counts` where key is student name and value is check-in count.
-2. Print each student and count.
-3. Print who checked in the most.
 
-## Part B: Student profile map
-Create a dictionary for one student with keys:
-- `name`
-- `major`
-- `units`
-- `gpa`
+### Tasks
+1. Print the points for `'go to office hours'`.
+2. Add one new task: `'tutor a classmate'` with `0.4`.
+3. Increase `'share one resource'` from `0.2` to `0.25`.
+4. Print all tasks and points.
 
-Tasks:
-1. Print the name and GPA.
-2. Increase units by 3.
-3. Add key `clubs` with a list of at least 2 clubs.
-4. Iterate through all key/value pairs and print them.
+### Starter template
+```python
+points = {
+	'go to office hours': 0.5,
+	'ask 5 academic questions': 0.3,
+	'share one resource': 0.2
+}
 
-## Challenge
-Given a sentence, compute word frequency dictionary and print in descending order of count.
+# 1) print one value
 
-## Submission
-- Include code and output.
-- Add 2 sentences: when would you prefer dict over list?
+# 2) add one key-value pair
+
+# 3) update one value
+
+# 4) loop and print key + value
+```
+
+## Part B: CS pathway salary dictionary (practice data)
+Use this starter code:
+
+```python
+median_salary = {
+	'Data Analyst': 78000,
+	'Software Engineer': 130000,
+	'ML Engineer': 145000
+}
+```
+
+### Tasks
+1. Print the salary for `'ML Engineer'`.
+2. Use `.get()` to safely check `'AI Researcher'` with default `'N/A'`.
+3. Print all roles and salaries.
+
+### Starter template
+```python
+median_salary = {
+	'Data Analyst': 78000,
+	'Software Engineer': 130000,
+	'ML Engineer': 145000
+}
+
+# 1) direct lookup
+
+# 2) safe lookup with .get
+
+# 3) loop through dictionary
+```
+
+## Mini challenge
+Given this list, build a frequency dictionary:
+
+```python
+topics = ['list', 'dict', 'list', 'loop', 'dict', 'dict']
+```
+
+## Reflection
+Write 2-3 sentences:
+- When would you choose a dictionary instead of a list?
+
+## Submission checklist
+- Your code runs without errors.
+- You included comments.
+- You included output for both parts.
