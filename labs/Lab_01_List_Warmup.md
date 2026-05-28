@@ -64,3 +64,18 @@ Write one sentence:
 - Your code runs without errors.
 - You included short comments for each step.
 - You pasted output (or screenshots) for Part A and Part B.
+
+## Want to learn more?
+- Lists
+	- Beginner: https://www.w3schools.com/python/python_lists.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+- Dictionaries
+	- Beginner: https://www.w3schools.com/python/python_dictionaries.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+- Tuples
+	- Beginner: https://www.w3schools.com/python/python_tuples.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+- Objects (classes/dataclasses)
+	- Beginner: https://www.w3schools.com/python/python_classes.asp
+	- More: https://docs.python.org/3/tutorial/classes.html
+	- Dataclass reference: https://docs.python.org/3/library/dataclasses.html

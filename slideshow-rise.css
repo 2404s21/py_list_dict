@@ -7,9 +7,9 @@
 */
 
 :root {
-  --slide-scale: 1.00;
-  --body-size: 1.00em;
-  --code-size: 0.98em;
+  --slide-scale: 1.10;
+  --body-size: 1.05em;
+  --code-size: 1.02em;
   --body-line: 1.30;
   --code-line: 1.28;
   --code-panel-max-h: 34vh;

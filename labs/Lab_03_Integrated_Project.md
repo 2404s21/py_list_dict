@@ -94,8 +94,23 @@ Write 3-4 lines:
 2. Why did you use a dictionary for points?
 3. Why is tuple/object only brief here?
 
-## Simple rubric (10 points)
+## How your work will be checked (10 points)
 - Correct code execution: 4
 - Correct use of list + dict: 3
 - Brief tuple + object usage: 2
 - Reflection: 1
+
+## Want to learn more?
+- Lists
+	- Beginner: https://www.w3schools.com/python/python_lists.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+- Dictionaries
+	- Beginner: https://www.w3schools.com/python/python_dictionaries.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+- Tuples
+	- Beginner: https://www.w3schools.com/python/python_tuples.asp
+	- More: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+- Objects (classes/dataclasses)
+	- Beginner: https://www.w3schools.com/python/python_classes.asp
+	- More: https://docs.python.org/3/tutorial/classes.html
+	- Dataclass reference: https://docs.python.org/3/library/dataclasses.html
