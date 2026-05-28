@@ -6,29 +6,29 @@
 - Use `.get()` for safer lookups.
 - Loop through key-value pairs.
 
-## Part A: Contribution points tracker
+## Part A: Weekly plan dictionary tracker
 Use this starter code:
 
 ```python
 points = {
-	'go to office hours': 0.5,
-	'ask 5 academic questions': 0.3,
-	'share one resource': 0.2
+	'CS 003A': 2,
+	'CS 003B': 3,
+	'CS 008': 2
 }
 ```
 
 ### Tasks
-1. Print the points for `'go to office hours'`.
-2. Add one new task: `'tutor a classmate'` with `0.4`.
-3. Increase `'share one resource'` from `0.2` to `0.25`.
-4. Print all tasks and points.
+1. Print the study hours for `'CS 003A'`.
+2. Add one new course `'CS 020'` with `4`.
+3. Update `'CS 008'` from `2` to `3`.
+4. Print all course-hour pairs.
 
 ### Starter template
 ```python
 points = {
-	'go to office hours': 0.5,
-	'ask 5 academic questions': 0.3,
-	'share one resource': 0.2
+	'CS 003A': 2,
+	'CS 003B': 3,
+	'CS 008': 2
 }
 
 # 1) print one value
@@ -40,28 +40,28 @@ points = {
 # 4) loop and print key + value
 ```
 
-## Part B: CS pathway salary dictionary (practice data)
+## Part B: Course checkpoint dictionary
 Use this starter code:
 
 ```python
-median_salary = {
-	'Data Analyst': 78000,
-	'Software Engineer': 130000,
-	'ML Engineer': 145000
+checkpoint = {
+	'quiz_1': 78,
+	'quiz_2': 85,
+	'project_1': 92
 }
 ```
 
 ### Tasks
-1. Print the salary for `'ML Engineer'`.
-2. Use `.get()` to safely check `'AI Researcher'` with default `'N/A'`.
-3. Print all roles and salaries.
+1. Print the score for `'project_1'`.
+2. Use `.get()` to safely check `'quiz_3'` with default `'Not yet graded'`.
+3. Print all checkpoint-score pairs.
 
 ### Starter template
 ```python
-median_salary = {
-	'Data Analyst': 78000,
-	'Software Engineer': 130000,
-	'ML Engineer': 145000
+checkpoint = {
+	'quiz_1': 78,
+	'quiz_2': 85,
+	'project_1': 92
 }
 
 # 1) direct lookup
@@ -90,14 +90,8 @@ Write 2-3 sentences:
 ## Want to learn more?
 - Lists
 	- Beginner: https://www.w3schools.com/python/python_lists.asp
+	- Why indexing starts at 0: https://stackoverflow.com/questions/18283097/why-are-array-indexes-zero-based-in-most-programming-languages
 	- More: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 - Dictionaries
 	- Beginner: https://www.w3schools.com/python/python_dictionaries.asp
 	- More: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-- Tuples
-	- Beginner: https://www.w3schools.com/python/python_tuples.asp
-	- More: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
-- Objects (classes/dataclasses)
-	- Beginner: https://www.w3schools.com/python/python_classes.asp
-	- More: https://docs.python.org/3/tutorial/classes.html
-	- Dataclass reference: https://docs.python.org/3/library/dataclasses.html

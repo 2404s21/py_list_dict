@@ -7,22 +7,43 @@
 - Loop through a list.
 - See that a list can hold different data types.
 
-## Part A: LACC CS/ML weekly learning plan
+## Part A: Why 1 list is better than 5 variables
+Compare these two approaches:
+
+```python
+# Option A: five separate variables
+course1 = 'CS 003A'
+course2 = 'CS 003B'
+course3 = 'CS 008'
+course4 = 'CS 020'
+course5 = 'CS 021'
+
+# Option B: one list variable
+ml_path_courses = ['CS 003A', 'CS 003B', 'CS 008', 'CS 020', 'CS 021']
+```
+
+### Tasks
+1. Print all five courses using the separate variables.
+2. Print all five courses using the list variable.
+3. Print only the first course and total course count using the list.
+4. Write 1-2 sentences: why is the list version easier to manage?
+
+## Part B: Basic list updates
 Use this starter code:
 
 ```python
-weekly_plan = ['Review Python notes', 'Attend CS lecture', 'Go to office hours']
+ml_path_courses = ['CS 003A', 'CS 003B', 'CS 008', 'CS 020', 'CS 021']
 ```
 
 ### Tasks
 1. Print the first item and last item.
-2. Add `'Ask 5 academic questions'` to the list.
-3. Remove `'Attend CS lecture'`.
+2. Add `'CS 025'` to the list.
+3. Remove `'CS 020'`.
 4. Print the updated list and the total number of items.
 
 ### Starter template
 ```python
-weekly_plan = ['Review Python notes', 'Attend CS lecture', 'Go to office hours']
+ml_path_courses = ['CS 003A', 'CS 003B', 'CS 008', 'CS 020', 'CS 021']
 
 # 1) first and last
 
@@ -33,7 +54,7 @@ weekly_plan = ['Review Python notes', 'Attend CS lecture', 'Go to office hours']
 # 4) print final list and length
 ```
 
-## Part B: Lists can store different types
+## Part C: Lists can store different types
 Use this starter code:
 
 ```python
@@ -68,14 +89,8 @@ Write one sentence:
 ## Want to learn more?
 - Lists
 	- Beginner: https://www.w3schools.com/python/python_lists.asp
+	- Why indexing starts at 0: https://stackoverflow.com/questions/18283097/why-are-array-indexes-zero-based-in-most-programming-languages
 	- More: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 - Dictionaries
 	- Beginner: https://www.w3schools.com/python/python_dictionaries.asp
 	- More: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-- Tuples
-	- Beginner: https://www.w3schools.com/python/python_tuples.asp
-	- More: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
-- Objects (classes/dataclasses)
-	- Beginner: https://www.w3schools.com/python/python_classes.asp
-	- More: https://docs.python.org/3/tutorial/classes.html
-	- Dataclass reference: https://docs.python.org/3/library/dataclasses.html
